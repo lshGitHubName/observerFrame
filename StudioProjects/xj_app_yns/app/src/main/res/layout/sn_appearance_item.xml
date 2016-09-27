@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sn_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="农作物" />
+
+    <com.xj.yns.viewplus.MyGridView
+        android:id="@+id/sn_item_gv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:columnWidth="10dp"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"></com.xj.yns.viewplus.MyGridView>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 顶部title-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- 已登陆通用标题栏 -->
+    <RelativeLayout
+        android:id="@+id/ir_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_green"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/id_db_title_left"
+            android:layout_width="45dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/details_back" />
+
+        <TextView
+            android:id="@+id/common_title_text"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/loginTitle"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/location_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/yns_map_icon"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/menu_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/yns_menu_list"
+            android:visibility="gone" />
+        />
+    </RelativeLayout>
+    <!-- 首页搜索框、 标题栏-->
+    <RelativeLayout
+        android:id="@+id/id_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_green">
+
+        <RelativeLayout
+            android:id="@+id/serarch_engine"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/home_search_background">
+
+            <ImageView
+                android:id="@+id/home_search_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_title_search" />
+
+            <TextView
+                android:id="@+id/unLogin_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/home_search_iv"
+                android:background="@drawable/home_search_background"
+                android:hint="@string/unloginTitle"
+                android:textColor="@color/color_white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

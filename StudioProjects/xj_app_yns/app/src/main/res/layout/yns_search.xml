@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/search_frame"
+        android:layout_gravity="center"
+        android:background="#C8C8CF"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:hint="@string/home_search"
+            android:background="@drawable/home_search_background1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/search"
+            android:src="@drawable/search_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textColor="@color/color_white"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/home_search_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

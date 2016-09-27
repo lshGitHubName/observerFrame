@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.xj.yns.MainActivity" >
+
+    <!-- 界面分为三部分，标题（几种变化），底部（几种变化） -->
+
+    <include
+        android:id="@+id/id_ir_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/yns_title"
+        />
+   
+        <LinearLayout
+            android:layout_weight="1"
+        android:id="@+id/id_ir_middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical"/>
+
+       
+    
+    <include
+        android:id="@+id/id_ir_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        layout="@layout/yns_bottom"
+        />
+
+  
+     
+</LinearLayout>

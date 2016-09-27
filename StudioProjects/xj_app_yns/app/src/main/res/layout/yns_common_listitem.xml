@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="10dp"
+     >
+
+    <ImageView
+        android:id="@+id/single_news_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:id="@+id/single_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/single_news_iv"
+        android:maxLines="2"
+        android:text="近日小麦价格持续走高，对于市场小麦的库存量造成很大的冲击"
+        android:textColor="@color/color_black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/single_news_time"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/single_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_black"
+        android:text="1991.11.16"/>
+
+</RelativeLayout>

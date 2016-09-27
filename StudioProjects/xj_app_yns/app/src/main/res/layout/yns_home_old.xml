@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wzh="http://schemas.android.com/apk/res/com.xj.yns"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+    
+     <ScrollView 
+         android:id="@+id/home_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="@null"
+        >
+        
+         <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             >
+   
+       <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+       <!--  广告图片切换 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_home_viewpager_ad"
+            android:layout_width="fill_parent"
+            android:layout_height="120dip" />
+
+       <!--  广告图片下的小点 -->
+        <LinearLayout
+            android:id="@+id/id_home_point_group"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/id_home_viewpager_ad"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+   <!--  二级导航圆形图+图下面的文字 -->
+	<HorizontalScrollView 
+	    android:id="@+id/home_hscrollview"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none"
+	    >
+    <LinearLayout
+        android:background="@color/color_white"
+        android:id="@+id/id_home_subnav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+      <!--   <LinearLayout
+            android:id="@+id/id_home_subnav1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+             <com.xj.yns.viewplus.ImageViewPlus
+			    android:id="@+id/imgplus1"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:src="@drawable/home11"
+			    wzh:type="circle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/dbs_subnav1"
+                android:textColor="@color/color_black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_home_subnav2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.xj.yns.viewplus.ImageViewPlus
+			    android:id="@+id/imgplus2"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:src="@drawable/home22"
+			    wzh:type="circle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/dbs_subnav2"
+                android:textColor="@color/color_black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_home_subnav3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.xj.yns.viewplus.ImageViewPlus
+			    android:id="@+id/imgplus3"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:src="@drawable/home33"
+			    wzh:type="circle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/dbs_subnav3"
+                android:textColor="@color/color_black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_home_subnav4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.xj.yns.viewplus.ImageViewPlus
+			    android:id="@+id/imgplus4"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:src="@drawable/home44"
+			    wzh:type="circle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/dbs_subnav4"
+                android:textColor="@color/color_black"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_home_subnav5"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.xj.yns.viewplus.ImageViewPlus
+			    android:id="@+id/imgplus5"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:src="@drawable/home44"
+			    wzh:type="circle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/dbs_subnav4"
+                android:textColor="@color/color_black"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_home_subnav6"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.xj.yns.viewplus.ImageViewPlus
+			    android:id="@+id/imgplus6"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:src="@drawable/home44"
+			    wzh:type="circle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/dbs_subnav4"
+                android:textColor="@color/color_black"
+                android:textSize="12sp" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/id_home_subnav7"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.xj.yns.viewplus.ImageViewPlus
+			    android:id="@+id/imgplus7"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:src="@drawable/home44"
+			    wzh:type="circle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/dbs_subnav4"
+                android:textColor="@color/color_black"
+                android:textSize="12sp" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/id_home_subnav8"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.xj.yns.viewplus.ImageViewPlus
+			    android:id="@+id/imgplus8"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:src="@drawable/home44"
+			    wzh:type="circle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/dbs_subnav4"
+                android:textColor="@color/color_black"
+                android:textSize="12sp" />
+        </LinearLayout> -->
+    </LinearLayout>
+    </HorizontalScrollView>
+    
+  <!--    分割线  -->
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+		android:background="@color/color_middle_divider"        
+        ></LinearLayout>
+    
+
+ <!--    商品列表排序选择及其以下所有 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_white"
+        android:orientation="vertical" >
+
+     <!--    益农社+更多 -->
+     <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         >
+          <TextView
+                android:id="@+id/id_home_sort1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/dbs_home_name"
+                android:textColor="@color/color_black"
+                android:textSize="14sp" />
+         <TextView
+                android:id="@+id/id_home_sort2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/dbs_more"
+                android:drawableRight="@drawable/home_arrow"
+                android:textColor="@color/color_black"
+                android:textSize="14sp" />
+     </RelativeLayout>
+     
+       <!--  信息列表展示 gridView -->
+        <com.xj.yns.viewplus.MyGridView
+            android:id="@+id/id_yns_home_gview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnWidth="10dp"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@null"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" >
+        </com.xj.yns.viewplus.MyGridView>
+    </LinearLayout>
+    </LinearLayout>
+        </ScrollView>
+   
+</LinearLayout>

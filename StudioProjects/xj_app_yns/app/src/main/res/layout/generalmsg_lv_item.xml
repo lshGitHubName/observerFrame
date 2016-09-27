@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/kindsmsg_item_iv"
+        android:src="@drawable/isloading1"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/kindsmsg_item_tv"
+        android:text="阿弥陀佛么么哒，乖，摸摸头"
+        android:maxLines="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wzh="http://schemas.android.com/apk/res/com.xj.yns"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:gravity="center"
+   >
+    <com.xj.yns.viewplus.ImageViewPlus
+        android:src="@drawable/isloading1"
+        android:scaleType="centerInside"
+        android:id="@+id/msgmarket_item_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        wzh:type="circle" />
+    <TextView
+        android:text="haoaho"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:id="@+id/msgmarket_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
