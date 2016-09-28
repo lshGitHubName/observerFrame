@@ -1,4 +1,4 @@
-package com.xj.yns;
+﻿package com.xj.yns;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -85,6 +85,8 @@ public class MainActivity extends Activity {
 			if(!result){
 				PromptManager.showExitSystem(this);
 			}
+
+
 			return false;
 		}
 		return super.onKeyDown(keyCode, event);
